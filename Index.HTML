@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>YOUR_NAME | Hub</title>
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #f3f4f6;
+      --muted: #9ca3af;
+      --accent: #7c5cff;
+      --x: #1d9bf0;
+      --pixiv: #0096fa;
+      --dam: #ff4d8d;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Hiragino Sans", "Yu Gothic", sans-serif;
+      background: radial-gradient(1200px 600px at 10% -10%, #2a1f4a 0%, var(--bg) 45%);
+      color: var(--text);
+      min-height: 100vh;
+      line-height: 1.7;
+    }
+    .wrap { max-width: 880px; margin: 0 auto; padding: 48px 20px 80px; }
+    header { text-align: center; margin-bottom: 48px; }
+    .avatar {
+      width: 96px; height: 96px; border-radius: 50%;
+      margin: 0 auto 18px; background: linear-gradient(135deg, var(--accent), var(--dam));
+      display: grid; place-items: center; font-size: 36px;
+    }
+    h1 { font-size: 2rem; letter-spacing: .04em; }
+    .bio { color: var(--muted); margin-top: 10px; }
+    .grid { display: grid; gap: 18px; }
+    .card {
+      background: var(--card);
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 18px;
+      padding: 22px;
+      transition: transform .2s ease, border-color .2s ease;
+    }
+    .card:hover { transform: translateY(-3px); border-color: rgba(255,255,255,.16); }
+    .label { font-size: .8rem; letter-spacing: .12em; color: var(--muted); }
+    .card h2 { margin: 4px 0 10px; font-size: 1.25rem; }
+    .card p { color: var(--muted); margin-bottom: 16px; }
+    a.btn {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 999px;
+      font-weight: 600;
+    }
+    .x { background: var(--x); }
+    .pixiv { background: var(--pixiv); }
+    .dam { background: var(--dam); }
+    footer { text-align: center; color: var(--muted); margin-top: 40px; font-size: .85rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="avatar">★</div>
+      <h1>YOUR_NAME</h1>
+      <p class="bio">イラスト / つぶやき / カラオケの活動まとめ</p>
+    </header>
+
+    <div class="grid">
+      <section class="card">
+        <div class="label">SNS</div>
+        <h2>X</h2>
+        <p>日常や制作の進捗、おしらせはこちら。</p>
+        <a class="btn x" href="https://x.com/YOUR_X_ID" target="_blank" rel="noopener">Xを見る</a>
+      </section>
+
+      <section class="card">
+        <div class="label">ILLUST</div>
+        <h2>pixiv</h2>
+        <p>イラスト・作品はpixivにまとめています。</p>
+        <a class="btn pixiv" href="https://www.pixiv.net/users/YOUR_PIXIV_ID" target="_blank" rel="noopener">pixivを見る</a>
+      </section>
+
+      <section class="card">
+        <div class="label">KARAOKE</div>
+        <h2>DAM★とも</h2>
+        <p>録音・動画などの歌唱記録はDAM★ともへ。</p>
+        <a class="btn dam" href="https://www.clubdam.com/app/damtomo/member/info/Profile.do?damtomoId=YOUR_DAM_ID" target="_blank" rel="noopener">DAM★ともを見る</a>
+      </section>
+    </div>
+
+    <footer>© YOUR_NAME</footer>
+  </div>
+</body>
+</html>
